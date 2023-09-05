@@ -1,0 +1,121 @@
+.heading-2 {
+  font-weight: 500;
+  font-size: 3.6rem;
+}
+
+.heading-6 {
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+.collections-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collections-desc .see-more {
+  font-weight: 300;
+  color: rgb(255, 126, 139);
+  font-size: 1.6rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.collections-list {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.collection {
+  position: relative;
+  width: 100%;
+  max-width: 26rem;
+  height: 32rem;
+}
+
+.image {
+  height: 32rem;
+}
+
+.image img {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 0.6rem;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.05) 85%
+  );
+}
+
+.overlay-info {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  line-height: 1.5;
+  margin: 0px;
+  padding: 0px 1.6rem;
+  font-size: 1.8rem;
+  width: 100%;
+}
+
+.places {
+    font-size: 1.4rem;
+    margin: 0.3rem 0px 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.overlay-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (max-width: 1050px) {
+  .collections .heading-2  {
+    padding: 0px 2.4rem;
+  }
+  .collections-desc .heading-6 {
+    padding: 0px 2.4rem;
+  }
+  .collections-desc .see-more {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .collections-desc .see-more {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .collections .heading-2 {
+    font-size: 2rem;
+    line-height: 3.2rem;
+  }
+
+  .collections-desc .heading-6{
+    font-size: 1.2rem;
+  }
+
+  .collection {
+    max-width: 20rem;
+  }
+}

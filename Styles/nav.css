@@ -1,0 +1,87 @@
+header {
+  width: 100%;
+  position: absolute;
+}
+
+nav {
+  width: 80%;
+  font-weight: 200;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  user-select: none;
+  padding: 1.7rem 0rem;
+  color: white;
+}
+
+nav .nav-element {
+  padding-bottom: 1rem;
+  border-radius: 0px;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0px 0px 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 1rem;
+}
+
+nav .nav-element a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+}
+
+nav .nav-right {
+  display: flex;
+}
+
+nav .nav-right  .nav-element a {
+  margin-right: 2rem;
+  font-size: 1.8rem;
+  font-weight: 200;
+  padding: 0.8rem;
+}
+
+.user-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 1px solid rgb(207,207,207);
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: rgb(239,79,95);
+  display: none;
+}
+
+@media (max-width : 800px) {
+  nav {
+    justify-content: flex-end;
+    padding: 0px 1rem;
+    width: 100%;
+    height: 5.6rem;
+  }
+
+  .user-icon {
+    display: flex;
+  }
+
+  .nav-left {
+    display: none  !important; 
+  }
+
+  nav .nav-right {
+    display: none !important;
+  }
+}

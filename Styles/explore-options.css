@@ -1,0 +1,155 @@
+.explore-options {
+  max-width: 110rem;
+  width: 100%;
+  margin: auto;
+  padding: 5rem 0;
+}
+
+.explore-options .explore-heading {
+  margin: 0px 0px 2rem;
+  color: rgb(54, 54, 54);
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.accordions-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  border-radius: 0.8rem;
+  padding: 2rem 2.4rem;
+  border: 1px solid rgb(232, 232, 232);
+  cursor: pointer;
+}
+
+.accordion-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.accordion-container i {
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.accordion-data {
+  margin-top: 2rem;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.accordion-data ul {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+}
+
+.accordion-data ul .small-circle {
+  display: inline-block;
+  background: rgb(130, 130, 130);
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.accordion-data ul li {
+  text-decoration: none;
+  color: rgb(130, 130, 130);
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-right: 1rem;
+  font-weight: 300;
+}
+
+.accordion-data li:hover {
+  color: black;
+  font-weight: 500;
+}
+
+.animate {
+  transform: rotate(180deg);
+}
+
+.accordion-data .restaurant-chains,
+.accordion-data .restaurant-cities {
+  display: inline-block;
+  width: 100%;
+}
+
+.accordion-data .restaurant-chains li,
+.accordion-data .restaurant-cities li {
+  display: inline-block;
+  text-align: left;
+  text-decoration: none;
+  color: rgb(130, 130, 130);
+  font-weight: 300;
+  margin-bottom: 1.2rem;
+  width: 17%;
+  line-height: 1.8;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+.accordion-data .restaurant-chains li:hover,
+.accordion-data .restaurant-cities li:hover {
+  color: black;
+  font-weight: 500;
+}
+
+.accordion-data .restaurant-cities .see-more {
+  display: inline-block;
+  border-bottom: 2px solid black;
+  border-bottom-width: 50%;
+  margin-bottom: 1.2rem;
+  vertical-align: bottom;
+  color: black;
+  font-weight: 500;
+  width: auto;
+}
+
+@media (max-width: 1050px) {
+  .explore-options {
+    padding: 0px 2.4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .explore-options {
+    max-width: 100%;
+    padding: 5rem 2.4rem;
+  }
+
+  .explore-options .explore-heading {
+    font-size: 2rem;
+  }
+
+  .accordion-data .restaurant-chains li,
+  .accordion-data .restaurant-cities li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .accordion-data .restaurant-cities .see-more {
+    display: flex;
+    width: auto;
+  }
+}
